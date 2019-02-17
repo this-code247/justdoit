@@ -1,0 +1,7 @@
+<header>
+    <ul>
+      <li><a href="" class="app-name">{{ appName }}</a><span class="pipe-border">|</span></li>
+      <li *ngFor="let country of countries"><a (click)="onCountryChosen(country)" class="country">{{country.name }}</a></li>
+    </ul>
+</header>
+

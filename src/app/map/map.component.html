@@ -1,0 +1,27 @@
+<div>
+    <agm-map [latitude]="mapService.center.latitude" [longitude]="mapService.center.longitude"
+     [zoom]="4"
+      (mapClick)="onChoseLocation($event)">
+
+        <agm-marker
+          [iconUrl]="'../assets/images/heart30.png'"
+          [latitude]="mapService.center.latitude"
+          [longitude]="mapService.center.longitude"
+          *ngIf="mapService.center.latitude && mapService.center.longitude">
+      </agm-marker>
+
+
+        <agm-marker-cluster [imagePath]="'../assets/images/m'">
+
+          <ng-container *ngFor="let user of mapService.users">
+            <agm-marker
+              [latitude]="user.location.latitude"
+              [longitude]="user.location.longitude">
+            </agm-marker>
+          </ng-container>
+
+      </agm-marker-cluster>
+
+    </agm-map>
+
+</div>

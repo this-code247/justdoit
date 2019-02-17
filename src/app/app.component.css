@@ -1,0 +1,20 @@
+.mygrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.header {
+  grid-column: span 12;
+}
+
+.map {
+  grid-column: span 9;
+}
+
+.sidemenu {
+  grid-column: span 3;
+}
+
+.footer {
+  grid-column: span 12;
+}

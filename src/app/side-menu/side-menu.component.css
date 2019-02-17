@@ -1,0 +1,25 @@
+.warrper {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.userImage {
+  grid-column: span 1;
+}
+
+.userDetails {
+  grid-column: span 3;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}

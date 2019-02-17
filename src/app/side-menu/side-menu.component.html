@@ -1,0 +1,22 @@
+<div class="warrper">
+
+<div *ngFor="let user of mapService.users">
+
+  <div class="user">
+
+    <div class="userImage">
+      <img [src]="user.imageUrl" class="img">
+    </div>
+
+    <div class="userDetails">
+      <h4>{{user.name}}</h4>
+
+      latitude : {{user.location.latitude}}
+      <br>
+      longitude : {{user.location.longitude}}
+
+    </div>
+  </div>
+
+</div>
+</div>
